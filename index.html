@@ -3,27 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#050505">
-<title>ستانلي | STANLEY</title>
+<meta name="theme-color" content="#FAF9F6">
+<title>تيانا | Tiana</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800&family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --navy:#111111;
-    --navy-deep:#050505;
-    --cream:#F5F1E8;
-    --gold:#D8AA5B;
-    --gold-soft:#E8C982;
-    --ink:#B7B7B7;
-    --white:#F5F1E8;
-    --card:#111111;
-    --field:#1B1B1B;
-    --muted:#B7B7B7;
-    --border:rgba(216,170,91,.45);
+    --navy:#1A1A1A;
+    --navy-deep:#111111;
+    --cream:#FAF9F6;
+    --gold:#3F5F97;
+    --gold-soft:#6E8BB8;
+    --ink:#1A1A1A;
+    --white:#1A1A1A;
+    --card:#FFFFFF;
+    --field:#F0EEE9;
+    --muted:#6E6E6E;
+    --border:rgba(46,74,122,.35);
   }
 
   *{box-sizing:border-box;}
-  html{ background:#050505; }
+  html{ background:#FAF9F6; }
 
   body{
     margin:0;
@@ -33,7 +33,7 @@
     -webkit-tap-highlight-color:transparent;
     color:var(--white);
     position:relative;
-    background:#050505;
+    background:#FAF9F6;
   }
   body::before{
     content:"";
@@ -41,9 +41,9 @@
     inset:0;
     z-index:0;
     background:
-      radial-gradient(1100px 560px at 85% -10%, rgba(216,170,91,.10), transparent 60%),
-      radial-gradient(900px 500px at -5% 110%, rgba(216,170,91,.07), transparent 55%),
-      linear-gradient(160deg, #0B0B0B 0%, #101010 55%, #050505 100%);
+      radial-gradient(1100px 560px at 85% -10%, rgba(63,95,151,.06), transparent 60%),
+      radial-gradient(900px 500px at -5% 110%, rgba(63,95,151,.04), transparent 55%),
+      linear-gradient(160deg, #FDFCFA 0%, #FAF9F6 55%, #F7F6F3 100%);
   }
 
   [lang-ar]{ font-family:'Cairo', sans-serif; }
@@ -65,7 +65,7 @@
     min-height:100dvh;
     display:flex;
     flex-direction:column;
-    background:linear-gradient(180deg, rgba(5,5,5,.50) 0%, rgba(5,5,5,.20) 100%);
+    background:linear-gradient(180deg, rgba(255,255,255,.35) 0%, rgba(255,255,255,0) 100%);
     transition:opacity .25s ease;
   }
   .app.switching{ opacity:0; }
@@ -80,7 +80,7 @@
     justify-content:space-between;
     gap:12px;
     padding:max(14px, env(safe-area-inset-top)) 20px 12px;
-    background:rgba(5,5,5,.88);
+    background:rgba(250,249,246,.94);
   }
 
   .brand{ display:flex; align-items:center; gap:12px; min-width:0; }
@@ -93,7 +93,7 @@
     line-height:1.1;
     white-space:nowrap;
   }
-  .tagline{ font-size:11px; font-weight:500; color:#B7B7B7; }
+  .tagline{ font-size:11px; font-weight:500; color:#6E6E6E; }
 
   .logo-slot{
     width:46px;
@@ -111,8 +111,8 @@
 
   .lang-toggle{
     appearance:none;
-    border:1.5px solid rgba(232,201,130,.55);
-    background:rgba(232,201,130,.12);
+    border:1.5px solid rgba(63,95,151,.55);
+    background:rgba(63,95,151,.12);
     color:var(--gold-soft);
     font-family:'Poppins',sans-serif;
     font-weight:600;
@@ -124,7 +124,7 @@
     flex-shrink:0;
     transition:background .15s ease, border-color .15s ease, transform .1s ease;
   }
-  .lang-toggle:hover{ background:rgba(232,201,130,.2); border-color:var(--gold-soft); }
+  .lang-toggle:hover{ background:rgba(63,95,151,.2); border-color:var(--gold-soft); }
   .lang-toggle:active{ transform:scale(.95); }
 
   /* ---- المحتوى ---- */
@@ -142,7 +142,7 @@
     border-radius:22px;
     padding:9px;
     background:var(--card);
-    box-shadow:0 20px 45px rgba(0,0,0,.25);
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
     overflow:hidden;
   }
   .hero-slot{ border-radius:14px; aspect-ratio:16/8; overflow:hidden; position:relative; }
@@ -150,9 +150,9 @@
   .hero-noimg{
     display:none;
     align-items:center; justify-content:center;
-    border:2px dashed rgba(216,170,91,.7);
+    border:2px dashed rgba(46,74,122,.7);
     border-radius:14px;
-    background:repeating-linear-gradient(45deg, rgba(216,170,91,.08) 0 10px, rgba(216,170,91,.15) 10px 20px);
+    background:repeating-linear-gradient(45deg, rgba(46,74,122,.08) 0 10px, rgba(46,74,122,.15) 10px 20px);
     color:var(--gold-soft);
     font-size:13px;
     font-weight:600;
@@ -164,7 +164,7 @@ aspect-ratio:16/8;
     display:flex;
     align-items:center;
     gap:10px;
-    color:#B7B7B7;
+    color:#6E6E6E;
     font-size:13px;
     font-weight:600;
     letter-spacing:.02em;
@@ -183,7 +183,7 @@ aspect-ratio:16/8;
     gap:14px;
     text-decoration:none;
     background:var(--card);
-    border:1px solid rgba(216,170,91,.45);
+    border:1px solid rgba(46,74,122,.45);
     border-radius:18px;
     padding:13px 15px;
     transition:transform .18s ease, background .18s ease, border-color .18s ease;
@@ -196,7 +196,7 @@ aspect-ratio:16/8;
     flex-shrink:0;
     display:flex; align-items:center; justify-content:center;
     border-radius:13px;
-    background:rgba(216,170,91,.16);
+    background:rgba(46,74,122,.16);
     color:var(--gold-soft);
   }
   .pill .icon svg{ width:23px; height:23px; }
@@ -214,7 +214,7 @@ aspect-ratio:16/8;
 
   .pill .chev{
     flex-shrink:0;
-    color:#B7B7B7;
+    color:#6E6E6E;
     display:flex;
   }
   .pill .chev svg{ width:18px; height:18px; }
@@ -224,13 +224,13 @@ aspect-ratio:16/8;
   .footer{
     margin-top:auto;
     padding:16px 20px max(18px, env(safe-area-inset-bottom));
-    border-top:1px solid rgba(216,170,91,.25);
+    border-top:1px solid rgba(46,74,122,.25);
     display:flex;
     align-items:center;
     justify-content:space-between;
     gap:10px;
   }
-  .footer span{ color:#B7B7B7; font-size:12.5px; font-weight:500; }
+  .footer span{ color:#6E6E6E; font-size:12.5px; font-weight:500; }
   .footer .domain{ font-family:'Poppins',sans-serif; font-size:12.5px; font-weight:600; color:var(--gold-soft); text-decoration:none; }
 
   /* ===================================================================
@@ -261,8 +261,8 @@ aspect-ratio:16/8;
       font-weight:700;
       letter-spacing:.06em;
       color:var(--gold-soft);
-      background:rgba(216,170,91,.12);
-      border:1px solid rgba(216,170,91,.35);
+      background:rgba(46,74,122,.12);
+      border:1px solid rgba(46,74,122,.35);
       border-radius:999px;
       padding:5px 12px;
     }
@@ -291,7 +291,7 @@ aspect-ratio:16/8;
     .intro p{
       margin:0;
       max-width:36ch;
-      color:#B7B7B7;
+      color:#6E6E6E;
       font-size:14.5px;
       line-height:1.75;
     }
@@ -312,7 +312,7 @@ aspect-ratio:16/8;
       padding:14px 6px;
       border-radius:18px;
       background:var(--card);
-      border:1px solid rgba(216,170,91,.45);
+      border:1px solid rgba(46,74,122,.45);
       color:var(--white);
       transition:transform .18s ease, background .18s ease, border-color .18s ease;
     }
@@ -322,11 +322,11 @@ aspect-ratio:16/8;
       width:48px; height:48px;
       border-radius:50%;
       display:flex; align-items:center; justify-content:center;
-      background:rgba(216,170,91,.16);
+      background:rgba(46,74,122,.16);
       color:var(--gold-soft);
     }
     .quick a .qi svg{ width:23px; height:23px; }
-    .quick a small{ font-size:11px; font-weight:600; color:#B7B7B7; }
+    .quick a small{ font-size:11px; font-weight:600; color:#6E6E6E; }
 
     /* تحسين بطاقات التواصل */
     .contacts{ gap:12px; }
@@ -360,9 +360,9 @@ aspect-ratio:16/8;
     align-items:center;
     gap:10px;
     padding:10px 16px max(12px, env(safe-area-inset-bottom));
-    background:rgba(5,5,5,.96);
-    border-top:1px solid rgba(216,170,91,.30);
-    box-shadow:0 -18px 40px rgba(0,0,0,.3);
+    background:rgba(250,249,246,.96);
+    border-top:1px solid rgba(46,74,122,.20);
+    box-shadow:0 -18px 40px rgba(0,0,0,.08);
   }
   .dock .d-btn{
     width:48px; height:48px;
@@ -370,12 +370,12 @@ aspect-ratio:16/8;
     display:flex; align-items:center; justify-content:center;
     border-radius:15px;
     background:var(--field);
-    border:1px solid rgba(216,170,91,.45);
+    border:1px solid rgba(46,74,122,.45);
     color:var(--gold-soft);
     text-decoration:none;
     transition:transform .15s ease, background .15s ease;
   }
-  .dock .d-btn:hover{ background:rgba(216,170,91,.18); }
+  .dock .d-btn:hover{ background:rgba(46,74,122,.18); }
   .dock .d-btn:active{ transform:scale(.94); }
   .dock .d-btn svg{ width:22px; height:22px; }
 
@@ -389,11 +389,11 @@ aspect-ratio:16/8;
     font-weight:700;
     font-size:15px;
     color:#fff;
-    background:#168A55;
-    box-shadow:0 12px 28px rgba(22,138,85,.4);
+    background:var(--gold);
+    box-shadow:0 12px 28px rgba(63,95,151,.4);
     transition:transform .15s ease, box-shadow .15s ease;
   }
-  .dock .d-cta:hover{ box-shadow:0 14px 32px rgba(22,138,85,.5); }
+  .dock .d-cta:hover{ box-shadow:0 14px 32px rgba(63,95,151,.5); }
   .dock .d-cta:active{ transform:scale(.98); }
   .dock .d-cta svg{ width:22px; height:22px; flex-shrink:0; }
 
@@ -416,8 +416,8 @@ aspect-ratio:16/8;
       min-height:0;
       border-radius:30px;
       overflow:hidden;
-      border:1px solid rgba(216,170,91,.45);
-      box-shadow:0 50px 110px rgba(0,0,0,.5);
+      border:1px solid rgba(46,74,122,.30);
+      box-shadow:0 50px 110px rgba(0,0,0,.12);
     }
     .topbar{ padding:22px 34px 16px; }
     .main-grid{
@@ -441,11 +441,11 @@ aspect-ratio:16/8;
   <header class="topbar">
     <div class="brand">
       <div class="logo-slot">
-        <img src="images/nawah-logo.png" alt="شعار نواة" onerror="this.closest('.logo-slot').style.display='none'">
+        <img src="images/nawah-logo.jpg" alt="شعار نواة" onerror="this.closest('.logo-slot').style.display='none'">
       </div>
       <div class="brand-txt">
-        <span class="wordmark" lang-ar>ستانلي</span>
-        <span class="wordmark" lang-en>STANLEY</span>
+        <span class="wordmark" lang-ar>تيانا</span>
+        <span class="wordmark" lang-en>Tiana</span>
         <span class="tagline" lang-ar>فساتين عصرية</span>
         <span class="tagline" lang-en>Modern dresses</span>
       </div>
@@ -458,7 +458,7 @@ aspect-ratio:16/8;
     <section class="hero">
       <div class="hero-frame">
         <div class="hero-slot">
-          <img src="images/images.jpg" alt="صورة العمل" onload="this.previousElementSibling && this.previousElementSibling.remove()" onerror="this.remove(); this.parentElement.classList.add('no-img')">
+          <img src="images/images.png" alt="صورة العمل" onload="this.previousElementSibling && this.previousElementSibling.remove()" onerror="this.remove(); this.parentElement.classList.add('no-img')">
         </div>
         <div class="hero-noimg">
           <span lang-ar>ضع الصورة هنا</span>
@@ -473,8 +473,8 @@ aspect-ratio:16/8;
         <span lang-en>Open 24/7</span>
       </span>
       <h1>
-        <span lang-ar>ستانلي</span>
-        <span lang-en>STANLEY</span>
+        <span lang-ar>تيانا</span>
+        <span lang-en>Tiana</span>
       </h1>
       <p lang-ar>نسعد بتواصلكم معنا — راسلونا مباشرة عبر واتساب، تابعونا على انستغرام، أو تفضلوا بزيارتنا.</p>
       <p lang-en>We'd love to hear from you — message us on WhatsApp, follow us on Instagram, or drop by.</p>
@@ -482,28 +482,28 @@ aspect-ratio:16/8;
 
     <section class="contacts">
       <div class="quick">
-        <a href="https://instagram.com/stanley_dress" target="_blank" rel="noopener">
+        <a href="https://www.instagram.com/tiana_jeans?stkn=d2d6ODRvcDZnaDU5" target="_blank" rel="noopener">
           <span class="qi">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
           </span>
           <small lang-ar>انستغرام</small>
           <small lang-en>Instagram</small>
         </a>
-        <a href="https://www.facebook.com/profile.php?id=100091080548790" target="_blank" rel="noopener">
+        <a href="https://www.facebook.com/share/18CsyvCrga/" target="_blank" rel="noopener">
           <span class="qi">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854V15.47H7.078V12h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.234 2.686.234v2.953H15.83c-1.491 0-1.956.925-1.956 1.874V12h3.328l-.532 3.47h-2.796v8.385C19.612 22.954 24 17.99 24 12z"/></svg>
           </span>
           <small lang-ar>فيسبوك</small>
           <small lang-en>Facebook</small>
         </a>
-        <a href="https://wa.me/963935481860" target="_blank" rel="noopener">
+        <a href="https://wa.me/963982240229" target="_blank" rel="noopener">
           <span class="qi">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 12a8 8 0 1 1-3.6-6.7"/><path d="M20 12a8 8 0 0 0-8-8"/><path transform="translate(3.6 3.4) scale(0.7)" d="M8.5 9.5c.3 2.5 2.7 4.9 5.2 5.2l1-1.2c.2-.2.5-.3.8-.2l2 .7c.4.1.6.5.5.9-.3 1.4-1.6 2.4-3.1 2.2-4-.5-7.2-3.7-7.7-7.7-.2-1.5.8-2.8 2.2-3.1.4-.1.8.1.9.5l.7 2c.1.3 0 .6-.2.8L8.5 9.5Z"/></svg>
           </span>
           <small lang-ar>واتساب</small>
           <small lang-en>WhatsApp</small>
         </a>
-        <a href="https://www.google.com/maps?q=33.511085510253906,36.30314254760742&z=17&hl=ar" target="_blank" rel="noopener">
+        <a href="https://maps.app.goo.gl/7Q2qcP1eaJSUHPgR7" target="_blank" rel="noopener">
           <span class="qi">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
           </span>
@@ -517,50 +517,50 @@ aspect-ratio:16/8;
         <span lang-en>Get in touch</span>
       </div>
 
-      <a class="pill" href="https://instagram.com/stanley_dress" target="_blank" rel="noopener">
+      <a class="pill" href="https://www.instagram.com/tiana_jeans?stkn=d2d6ODRvcDZnaDU5" target="_blank" rel="noopener">
         <span class="icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
         </span>
         <span class="meta">
           <span class="title" lang-ar>انستغرام</span>
           <span class="title" lang-en>Instagram</span>
-          <span class="value">@stanley_dress</span>
+          <span class="value">@tiana_jeans</span>
         </span>
         <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 5 7 7-7 7"/></svg></span>
       </a>
 
-      <a class="pill" href="https://www.facebook.com/profile.php?id=100091080548790" target="_blank" rel="noopener">
+      <a class="pill" href="https://www.facebook.com/share/18CsyvCrga/" target="_blank" rel="noopener">
         <span class="icon">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854V15.47H7.078V12h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.234 2.686.234v2.953H15.83c-1.491 0-1.956.925-1.956 1.874V12h3.328l-.532 3.47h-2.796v8.385C19.612 22.954 24 17.99 24 12z"/></svg>
         </span>
         <span class="meta">
           <span class="title" lang-ar>فيسبوك</span>
           <span class="title" lang-en>Facebook</span>
-          <span class="value">@Stanley-Dress</span>
+          <span class="value">@Tiana Jeans </span>
         </span>
         <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 5 7 7-7 7"/></svg></span>
       </a>
 
-      <a class="pill" href="https://wa.me/963935481860" target="_blank" rel="noopener">
+      <a class="pill" href="https://wa.me/963982240229" target="_blank" rel="noopener">
         <span class="icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 12a8 8 0 1 1-3.6-6.7"/><path d="M20 12a8 8 0 0 0-8-8"/><path transform="translate(3.6 3.4) scale(0.7)" d="M8.5 9.5c.3 2.5 2.7 4.9 5.2 5.2l1-1.2c.2-.2.5-.3.8-.2l2 .7c.4.1.6.5.5.9-.3 1.4-1.6 2.4-3.1 2.2-4-.5-7.2-3.7-7.7-7.7-.2-1.5.8-2.8 2.2-3.1.4-.1.8.1.9.5l.7 2c.1.3 0 .6-.2.8L8.5 9.5Z"/></svg>
         </span>
         <span class="meta">
           <span class="title" lang-ar>واتساب</span>
           <span class="title" lang-en>WhatsApp</span>
-          <span class="value">0935481860</span>
+          <span class="value">0982240229</span>
         </span>
         <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 5 7 7-7 7"/></svg></span>
       </a>
 
-      <a class="pill" href="https://www.google.com/maps?q=33.511085510253906,36.30314254760742&z=17&hl=ar" target="_blank" rel="noopener">
+      <a class="pill" href="https://maps.app.goo.gl/7Q2qcP1eaJSUHPgR7" target="_blank" rel="noopener">
         <span class="icon">
           <svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
         </span>
         <span class="meta">
           <span class="title" lang-ar>الموقع</span>
           <span class="title" lang-en>Location</span>
-          <span class="value" lang-ar>سوريا, دمشق/ منتصف سوق الحمدية محل رقم 140 الطابق 1</span>
+          <span class="value" lang-ar>سوريا, دمشق/ ساحة الحريقة</span>
           <span class="value" lang-en>Syria, Damascus / Middle of Al-Hamidiyah Souq, Shop No. 140, 1st Floor</span>
         </span>
         <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 5 7 7-7 7"/></svg></span>
@@ -578,13 +578,13 @@ aspect-ratio:16/8;
 </main>
 
 <nav class="dock">
-  <a class="d-btn" href="https://www.facebook.com/profile.php?id=100091080548790" target="_blank" rel="noopener" aria-label="Facebook">
+  <a class="d-btn" href="https://www.facebook.com/share/18CsyvCrga/" target="_blank" rel="noopener" aria-label="Facebook">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854V15.47H7.078V12h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.234 2.686.234v2.953H15.83c-1.491 0-1.956.925-1.956 1.874V12h3.328l-.532 3.47h-2.796v8.385C19.612 22.954 24 17.99 24 12z"/></svg>
   </a>
-  <a class="d-btn" href="https://instagram.com/stanley_dress" target="_blank" rel="noopener" aria-label="Instagram">
+  <a class="d-btn" href="https://www.instagram.com/tiana_jeans?stkn=d2d6ODRvcDZnaDU5" target="_blank" rel="noopener" aria-label="Instagram">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
   </a>
-  <a class="d-cta" href="https://wa.me/963953461357" target="_blank" rel="noopener">
+  <a class="d-cta" href="https://wa.me/963982240229" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 12a8 8 0 1 1-3.6-6.7"/><path d="M20 12a8 8 0 0 0-8-8"/><path transform="translate(3.6 3.4) scale(0.7)" d="M8.5 9.5c.3 2.5 2.7 4.9 5.2 5.2l1-1.2c.2-.2.5-.3.8-.2l2 .7c.4.1.6.5.5.9-.3 1.4-1.6 2.4-3.1 2.2-4-.5-7.2-3.7-7.7-7.7-.2-1.5.8-2.8 2.2-3.1.4-.1.8.1.9.5l.7 2c.1.3 0 .6-.2.8L8.5 9.5Z"/></svg>
     <span lang-ar>تواصل عبر واتساب</span>
     <span lang-en>Chat on WhatsApp</span>
